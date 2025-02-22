@@ -7,6 +7,7 @@ import 'user.dart';
 import 'report.dart'; // Import the new page
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'accidentdetection.dart';
 
 void main() async {
   try{
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         '/register': (context) => RegisterPage(),
         '/user': (context) => UserPage(),
         '/accident_report': (context) => AccidentReportPage(),
+        '/detect_accident': (context) => DetectAccidentPage(), 
       },
     );
   }
